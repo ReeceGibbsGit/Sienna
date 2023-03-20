@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8CmSA7YXIrH4JJYE3i4koFZLwP+LwnxUYM1+kVBDmIU=",
+  "Source": "Sienna.Api",
+  "BasePath": "_content/Sienna.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

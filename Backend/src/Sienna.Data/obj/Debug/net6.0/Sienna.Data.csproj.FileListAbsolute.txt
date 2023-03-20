@@ -1,0 +1,14 @@
+C:\dev\Sienna\Backend\src\Sienna.Data\bin\Debug\net6.0\Sienna.Data.deps.json
+C:\dev\Sienna\Backend\src\Sienna.Data\bin\Debug\net6.0\Sienna.Data.runtimeconfig.json
+C:\dev\Sienna\Backend\src\Sienna.Data\bin\Debug\net6.0\Sienna.Data.dll
+C:\dev\Sienna\Backend\src\Sienna.Data\bin\Debug\net6.0\Sienna.Data.pdb
+C:\dev\Sienna\Backend\src\Sienna.Data\obj\Debug\net6.0\Sienna.Data.csproj.AssemblyReference.cache
+C:\dev\Sienna\Backend\src\Sienna.Data\obj\Debug\net6.0\Sienna.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Sienna\Backend\src\Sienna.Data\obj\Debug\net6.0\Sienna.Data.AssemblyInfoInputs.cache
+C:\dev\Sienna\Backend\src\Sienna.Data\obj\Debug\net6.0\Sienna.Data.AssemblyInfo.cs
+C:\dev\Sienna\Backend\src\Sienna.Data\obj\Debug\net6.0\Sienna.Data.csproj.CoreCompileInputs.cache
+C:\dev\Sienna\Backend\src\Sienna.Data\obj\Debug\net6.0\Sienna.Data.dll
+C:\dev\Sienna\Backend\src\Sienna.Data\obj\Debug\net6.0\refint\Sienna.Data.dll
+C:\dev\Sienna\Backend\src\Sienna.Data\obj\Debug\net6.0\Sienna.Data.pdb
+C:\dev\Sienna\Backend\src\Sienna.Data\obj\Debug\net6.0\Sienna.Data.genruntimeconfig.cache
+C:\dev\Sienna\Backend\src\Sienna.Data\obj\Debug\net6.0\ref\Sienna.Data.dll
