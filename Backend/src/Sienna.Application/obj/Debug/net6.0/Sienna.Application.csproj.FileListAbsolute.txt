@@ -1,0 +1,15 @@
+C:\dev\Sienna\Backend\src\Sienna.Application\bin\Debug\net6.0\Sienna.Application.deps.json
+C:\dev\Sienna\Backend\src\Sienna.Application\bin\Debug\net6.0\Sienna.Application.dll
+C:\dev\Sienna\Backend\src\Sienna.Application\bin\Debug\net6.0\Sienna.Application.pdb
+C:\dev\Sienna\Backend\src\Sienna.Application\obj\Debug\net6.0\Sienna.Application.csproj.AssemblyReference.cache
+C:\dev\Sienna\Backend\src\Sienna.Application\obj\Debug\net6.0\Sienna.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Sienna\Backend\src\Sienna.Application\obj\Debug\net6.0\Sienna.Application.AssemblyInfoInputs.cache
+C:\dev\Sienna\Backend\src\Sienna.Application\obj\Debug\net6.0\Sienna.Application.AssemblyInfo.cs
+C:\dev\Sienna\Backend\src\Sienna.Application\obj\Debug\net6.0\Sienna.Application.csproj.CoreCompileInputs.cache
+C:\dev\Sienna\Backend\src\Sienna.Application\obj\Debug\net6.0\Sienna.Application.dll
+C:\dev\Sienna\Backend\src\Sienna.Application\obj\Debug\net6.0\refint\Sienna.Application.dll
+C:\dev\Sienna\Backend\src\Sienna.Application\obj\Debug\net6.0\Sienna.Application.pdb
+C:\dev\Sienna\Backend\src\Sienna.Application\obj\Debug\net6.0\ref\Sienna.Application.dll
+C:\dev\Sienna\Backend\src\Sienna.Application\bin\Debug\net6.0\Sienna.Infrastructure.dll
+C:\dev\Sienna\Backend\src\Sienna.Application\bin\Debug\net6.0\Sienna.Infrastructure.pdb
+C:\dev\Sienna\Backend\src\Sienna.Application\obj\Debug\net6.0\Sienna.Application.csproj.CopyComplete

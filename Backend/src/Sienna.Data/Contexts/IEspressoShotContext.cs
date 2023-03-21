@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Sienna.Data.Models;
+using Sienna.Infrastructure.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sienna.Data.Contexts
+namespace Sienna.Infrastructure.Contexts
 {
     public interface IEspressoShotContext : IDisposable
     {

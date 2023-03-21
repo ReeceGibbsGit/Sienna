@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KatW4FRRTOsTGgt/0LWUOKSL1fHdR/fFt1nAeRXIHbuFDJjltLTI6nvzkoaVEycKXaPaaqik5YgOfUYfstMlfA==",
+  "dgSpecHash": "5uDc5QZyCTy2bxMztxlgT4KTXiHbqgODYZkGZfGacqiQehoTVFpJ2adZ3uX9aANJLNG5+mhDbb3oKqtdKIKWiQ==",
   "success": true,
-  "projectFilePath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Data.csproj",
+  "projectFilePath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\reece\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\reece\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

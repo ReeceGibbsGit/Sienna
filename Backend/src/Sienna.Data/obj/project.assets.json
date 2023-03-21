@@ -3562,9 +3562,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Data.csproj",
-      "projectName": "Sienna.Data",
-      "projectPath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Data.csproj",
+      "projectUniqueName": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Infrastructure.csproj",
+      "projectName": "Sienna.Infrastructure",
+      "projectPath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\reece\\.nuget\\packages\\",
       "outputPath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\obj\\",
       "projectStyle": "PackageReference",

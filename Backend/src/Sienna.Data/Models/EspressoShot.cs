@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sienna.Data.Models
+namespace Sienna.Infrastructure.Models
 {
     public class EspressoShot
     {
@@ -17,13 +17,13 @@ namespace Sienna.Data.Models
 
         public double Grind { get; set; }
 
-        public int Beans { get; set; }
+        public double Beans { get; set; }
 
-        public int Pressure { get; set; }
+        public double Pressure { get; set; }
 
-        public int Water { get; set; }
+        public double Water { get; set; }
 
-        public int BrewTime { get; set; }
+        public double BrewTime { get; set; }
 
         public int Flavour { get; set; }
 

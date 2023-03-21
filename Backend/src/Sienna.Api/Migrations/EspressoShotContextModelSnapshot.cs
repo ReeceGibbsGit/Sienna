@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Sienna.Data.Contexts;
+using Sienna.Infrastructure.Contexts;
 
 #nullable disable
 
@@ -22,7 +22,7 @@ namespace Sienna.Api.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Sienna.Data.Models.EspressoShot", b =>
+            modelBuilder.Entity("Sienna.Infrastructure.Models.EspressoShot", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -32,11 +32,11 @@ namespace Sienna.Api.Migrations
                         .HasMaxLength(128)
                         .HasColumnType("nvarchar(128)");
 
-                    b.Property<int>("Beans")
-                        .HasColumnType("int");
+                    b.Property<double>("Beans")
+                        .HasColumnType("float");
 
-                    b.Property<int>("BrewTime")
-                        .HasColumnType("int");
+                    b.Property<double>("BrewTime")
+                        .HasColumnType("float");
 
                     b.Property<string>("Comments")
                         .HasMaxLength(256)
@@ -48,14 +48,14 @@ namespace Sienna.Api.Migrations
                     b.Property<double>("Grind")
                         .HasColumnType("float");
 
-                    b.Property<int>("Pressure")
-                        .HasColumnType("int");
+                    b.Property<double>("Pressure")
+                        .HasColumnType("float");
 
                     b.Property<int>("Rating")
                         .HasColumnType("int");
 
-                    b.Property<int>("Water")
-                        .HasColumnType("int");
+                    b.Property<double>("Water")
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 

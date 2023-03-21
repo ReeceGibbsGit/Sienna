@@ -28,8 +28,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Data.csproj": {
-                "projectPath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Data.csproj"
+              "C:\\dev\\Sienna\\Backend\\src\\Sienna.Application\\Sienna.Application.csproj": {
+                "projectPath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Application\\Sienna.Application.csproj"
+              },
+              "C:\\dev\\Sienna\\Backend\\src\\Sienna.Common\\Sienna.Domain.csproj": {
+                "projectPath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Common\\Sienna.Domain.csproj"
+              },
+              "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Infrastructure.csproj": {
+                "projectPath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Infrastructure.csproj"
               }
             }
           }
@@ -44,6 +50,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -78,12 +92,136 @@
         }
       }
     },
-    "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Data.csproj": {
+    "C:\\dev\\Sienna\\Backend\\src\\Sienna.Application\\Sienna.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Data.csproj",
-        "projectName": "Sienna.Data",
-        "projectPath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Data.csproj",
+        "projectUniqueName": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Application\\Sienna.Application.csproj",
+        "projectName": "Sienna.Application",
+        "projectPath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Application\\Sienna.Application.csproj",
+        "packagesPath": "C:\\Users\\reece\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\reece\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Infrastructure.csproj": {
+                "projectPath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\dev\\Sienna\\Backend\\src\\Sienna.Common\\Sienna.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Common\\Sienna.Domain.csproj",
+        "projectName": "Sienna.Domain",
+        "projectPath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Common\\Sienna.Domain.csproj",
+        "packagesPath": "C:\\Users\\reece\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\reece\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Infrastructure.csproj": {
+                "projectPath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Infrastructure.csproj",
+        "projectName": "Sienna.Infrastructure",
+        "projectPath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\Sienna.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\reece\\.nuget\\packages\\",
         "outputPath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Data\\obj\\",
         "projectStyle": "PackageReference",
