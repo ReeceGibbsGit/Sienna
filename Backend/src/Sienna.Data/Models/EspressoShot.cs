@@ -11,14 +11,25 @@ namespace Sienna.Data.Models
     {
         [Key]
         public Guid Id { get; set; }
+
+        [StringLength(128)]
         public string? BeanType { get; set; }
-        public int Grind { get; set; }
+
+        public double Grind { get; set; }
+
         public int Beans { get; set; }
+
         public int Pressure { get; set; }
+
         public int Water { get; set; }
+
         public int BrewTime { get; set; }
+
         public int Flavour { get; set; }
+
         public int Rating { get; set; }
+
+        [StringLength(256)]
         public string? Comments { get; set; }
     }
 }

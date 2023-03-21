@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Sienna.Data.Contexts;
 
@@ -11,9 +12,11 @@ using Sienna.Data.Contexts;
 namespace Sienna.Api.Migrations
 {
     [DbContext(typeof(EspressoShotContext))]
-    partial class EspressoShotContextModelSnapshot : ModelSnapshot
+    [Migration("20230321045117_ChangedGrindToDecimal")]
+    partial class ChangedGrindToDecimal
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
