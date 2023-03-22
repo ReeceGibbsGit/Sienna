@@ -34,7 +34,7 @@ namespace Sienna.UnitTests.Api.Controllers
                 Water = 90.0,
                 BrewTime = 52.0,
                 Flavour = 3,
-                Rating = 4,
+                Rating = 4.0,
                 Comments = "Perfectly balanced. Really good."
             };
 

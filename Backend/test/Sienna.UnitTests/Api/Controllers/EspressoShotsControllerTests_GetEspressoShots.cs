@@ -33,7 +33,7 @@ namespace Sienna.UnitTests.Api.Controllers
                     Water = 90.0,
                     BrewTime = 52.0,
                     Flavour = 3,
-                    Rating = 4,
+                    Rating = 4.0,
                     Comments = "Perfectly balanced. Really good."
                 },
                 new EspressoShot
@@ -46,7 +46,7 @@ namespace Sienna.UnitTests.Api.Controllers
                     Water = 88.0,
                     BrewTime = 47.0,
                     Flavour = 4,
-                    Rating = 3,
+                    Rating = 3.0,
                     Comments = "Slightly bitter, but nice."
                 }
             };

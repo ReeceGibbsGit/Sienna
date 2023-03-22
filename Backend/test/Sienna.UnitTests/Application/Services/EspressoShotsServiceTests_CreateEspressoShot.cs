@@ -29,7 +29,7 @@ namespace Sienna.UnitTests.Application.Services
                 Water = 88.0,
                 BrewTime = 47.0,
                 Flavour = 4,
-                Rating = 3,
+                Rating = 3.0,
                 Comments = "Slightly bitter, but nice."
             };
 
