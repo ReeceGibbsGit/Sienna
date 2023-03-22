@@ -27,7 +27,7 @@ namespace Sienna.Infrastructure.Models
 
         public int Flavour { get; set; }
 
-        public int Rating { get; set; }
+        public double Rating { get; set; }
 
         [StringLength(256)]
         public string? Comments { get; set; }

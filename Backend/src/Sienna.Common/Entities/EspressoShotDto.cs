@@ -23,7 +23,7 @@ namespace Sienna.Common.Models
 
         public int Flavour { get; set; }
 
-        public int Rating { get; set; }
+        public double Rating { get; set; }
 
         public string? Comments { get; set; }
     }

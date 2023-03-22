@@ -25,4 +25,8 @@
     <ProjectReference Include="..\Sienna.Data\Sienna.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Filters\Auth\" />
+  </ItemGroup>
+
 </Project>

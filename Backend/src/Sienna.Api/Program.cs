@@ -4,6 +4,7 @@ using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Sienna.Api.Behaviours;
+using Sienna.Api.Filters.Operations;
 using Sienna.Application.Services;
 using Sienna.Common.Mappings;
 using Sienna.Domain.Validators;
@@ -17,7 +18,10 @@ builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.OperationFilter<EspressoShotsOperationFilter>();
+});
 
 // Adding our DbContext reference
 builder.Services.AddDbContext<EspressoShotRepository>(options => 

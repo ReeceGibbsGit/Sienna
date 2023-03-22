@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Sienna.Api.Attributes;
 using Sienna.Application.Services;
 using Sienna.Common.Models;
 using Sienna.Infrastructure.Models;
@@ -35,6 +36,7 @@ namespace Sienna.Application.Controllers
             return Ok(result);
         }
 
+        // DELETE api/espressoshots
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEspressoShot(Guid id)
         {
