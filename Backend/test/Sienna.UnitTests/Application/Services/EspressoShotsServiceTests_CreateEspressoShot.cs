@@ -37,7 +37,7 @@ namespace Sienna.UnitTests.Application.Services
             _mockRepository.Setup(x => x.SaveChangesAsync()).Returns(Task.FromResult(0));
 
             // Act
-            var result = _service.CreateEspressoShot(mockEspressoShot);
+            var result = await _service.CreateEspressoShot(mockEspressoShot);
 
             // Assert
             result.Should().BeEquivalentTo(mockEspressoShot);

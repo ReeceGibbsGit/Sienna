@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "jb9fKXUZNnub+W/S3rBv2gPgaShAPthLKJiQNsosxYe0Z7cQiQVctzHcnw3MvkrpOJfcy7ieb+AufD3MkTRfcw==",
+  "dgSpecHash": "IdrcRjjXuWIBJw7iQuFr3Mxp4cETWZL8ilLRcgHHcOpLmSI6ZYNSv3hTs3MWOwsL1+m9A30qDoxticLpkeg/hg==",
   "success": true,
   "projectFilePath": "C:\\dev\\Sienna\\Backend\\src\\Sienna.Application\\Sienna.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\reece\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\reece\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\reece\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\reece\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\reece\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\reece\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\reece\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\reece\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\reece\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

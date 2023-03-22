@@ -1,10 +1,13 @@
 using AutoMapper;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Sienna.Api.Behaviours;
 using Sienna.Application.Services;
 using Sienna.Common.Mappings;
 using Sienna.Infrastructure.Repositories;
 using System;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,6 +36,9 @@ builder.Services.AddSingleton(mapper);
 builder.Services.AddScoped<IEspressoShotRepository, EspressoShotRepository>();
 builder.Services.AddScoped<IEspressoShotsService, EspressoShotsService>();
 
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -45,6 +51,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware<ExceptionHandlingBehaviour>();
 
 app.MapControllers();
 

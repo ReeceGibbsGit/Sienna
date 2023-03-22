@@ -94,3 +94,7 @@ C:\dev\Sienna\Backend\src\Sienna.Api\bin\Debug\net6.0\Sienna.Domain.pdb
 C:\dev\Sienna\Backend\src\Sienna.Api\bin\Debug\net6.0\Sienna.Infrastructure.pdb
 C:\dev\Sienna\Backend\src\Sienna.Api\bin\Debug\net6.0\Sienna.Application.dll
 C:\dev\Sienna\Backend\src\Sienna.Api\bin\Debug\net6.0\Sienna.Application.pdb
+C:\dev\Sienna\Backend\src\Sienna.Api\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\dev\Sienna\Backend\src\Sienna.Api\bin\Debug\net6.0\FluentValidation.dll
+C:\dev\Sienna\Backend\src\Sienna.Api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\dev\Sienna\Backend\src\Sienna.Api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
