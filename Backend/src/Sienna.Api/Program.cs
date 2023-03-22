@@ -66,6 +66,8 @@ app.UseAuthorization();
 
 app.UseMiddleware<ExceptionHandlingBehaviour>();
 
+app.UseMiddleware<RequestLoggingBehaviour>();
+
 app.MapControllers();
 
 app.Run();

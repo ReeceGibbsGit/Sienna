@@ -35,7 +35,7 @@ namespace Sienna.Application.Controllers
         public async Task<IActionResult> CreateEspressoShot([FromBody] EspressoShotDto espressoShotDto)
         {
             var result = await _service.CreateEspressoShot(_mapper.Map<EspressoShot>(espressoShotDto));
-            return Ok(result);
+            return Created(result.Id.ToString(), result);
         }
 
         // DELETE api/espressoshots
