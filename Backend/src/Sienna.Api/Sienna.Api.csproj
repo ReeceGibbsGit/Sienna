@@ -4,6 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>37d858ec-ddc4-4d04-9d21-6554ce7102ed</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,10 +24,6 @@
     <ProjectReference Include="..\Sienna.Application\Sienna.Application.csproj" />
     <ProjectReference Include="..\Sienna.Common\Sienna.Domain.csproj" />
     <ProjectReference Include="..\Sienna.Data\Sienna.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Filters\Auth\" />
   </ItemGroup>
 
 </Project>

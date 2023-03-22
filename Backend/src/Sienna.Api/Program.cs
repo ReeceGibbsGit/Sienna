@@ -4,6 +4,7 @@ using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Sienna.Api.Behaviours;
+using Sienna.Api.Filters.Auth;
 using Sienna.Api.Filters.Operations;
 using Sienna.Application.Services;
 using Sienna.Common.Mappings;
@@ -14,7 +15,10 @@ using System;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<ApiKeyAttribute>();
+});
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

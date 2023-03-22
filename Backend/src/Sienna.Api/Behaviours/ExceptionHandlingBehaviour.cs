@@ -18,7 +18,6 @@ namespace Sienna.Api.Behaviours
             _exceptionHandlers = new Dictionary<Type, Func<HttpContext, Exception, Task>>
             {
                 { typeof(NotFoundException), HandleNotFoundException },
-                { typeof(ValidationException), HandleValidationException },
                 { typeof(UnauthorizedAccessException), HandleUnauthorizedAccessException }
             };
 
@@ -62,23 +61,9 @@ namespace Sienna.Api.Behaviours
             };
 
             var result = JsonConvert.SerializeObject(details, _serializerSettings);
-            await context.Response.WriteAsync(result);
+            await context.Response.WriteAsync(result); 
         }
 
-        private async Task HandleValidationException(HttpContext context, Exception exception)
-        {
-            var validationException = (ValidationException)exception;
-
-            var details = new ValidationProblemDetails(validationException.Errors)
-            {
-                Status = (int)HttpStatusCode.BadRequest,
-                Title = "Validation exception",
-                Type = "https://tools.ietf.org/html/rfc7231#section-6.5.1"
-            };
-
-            var result = JsonConvert.SerializeObject(details, _serializerSettings);
-            await context.Response.WriteAsync(result);
-        }
         private async Task HandleUnauthorizedAccessException(HttpContext context, Exception exception)
         {
             var details = new ProblemDetails
