@@ -14,7 +14,7 @@ namespace Sienna.Domain.Validators
         {
             RuleFor(espressoShot => espressoShot.Grind).InclusiveBetween(0.0, 6.0);
             RuleFor(espressoShot => espressoShot.Flavour).InclusiveBetween(1, 5);
-            RuleFor(espressoShot => espressoShot.Rating).InclusiveBetween(1, 5);
+            RuleFor(espressoShot => espressoShot.Rating).InclusiveBetween(1.0, 5.0);
         }
     }
 }

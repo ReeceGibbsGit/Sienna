@@ -61,19 +61,26 @@ namespace Sienna.Api.Behaviours
             };
 
             var result = JsonConvert.SerializeObject(details, _serializerSettings);
+
+            context.Response.StatusCode = (int)HttpStatusCode.NotFound;
             await context.Response.WriteAsync(result); 
         }
 
         private async Task HandleUnauthorizedAccessException(HttpContext context, Exception exception)
         {
+            var unauthorisedException = (UnauthorizedAccessException)exception;
+
             var details = new ProblemDetails
             {
                 Status = (int)HttpStatusCode.Unauthorized,
                 Title = "Unauthorized",
-                Type = "https://tools.ietf.org/html/rfc7235#section-3.1"
+                Type = "https://tools.ietf.org/html/rfc7235#section-3.1",
+                Detail = unauthorisedException.Message,
             };
 
             var result = JsonConvert.SerializeObject(details, _serializerSettings);
+
+            context.Response.StatusCode = (int)HttpStatusCode.Unauthorized;
             await context.Response.WriteAsync(result);
         }
     }
