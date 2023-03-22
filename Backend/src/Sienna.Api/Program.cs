@@ -1,13 +1,14 @@
 using AutoMapper;
+using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Sienna.Api.Behaviours;
 using Sienna.Application.Services;
 using Sienna.Common.Mappings;
+using Sienna.Domain.Validators;
 using Sienna.Infrastructure.Repositories;
 using System;
-using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,6 +39,9 @@ builder.Services.AddScoped<IEspressoShotsService, EspressoShotsService>();
 
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddFluentValidationClientsideAdapters();
+
+// All of our validators
+builder.Services.AddValidatorsFromAssemblyContaining<EspressoShotDtoValidator>();
 
 var app = builder.Build();
 
