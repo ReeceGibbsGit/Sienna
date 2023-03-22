@@ -782,6 +782,7 @@
       },
       "Sienna.Application/1.0.0": {
         "dependencies": {
+          "Sienna.Domain": "1.0.0",
           "Sienna.Infrastructure": "1.0.0"
         },
         "runtime": {

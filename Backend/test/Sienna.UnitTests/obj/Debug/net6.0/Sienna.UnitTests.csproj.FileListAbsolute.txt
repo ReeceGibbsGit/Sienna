@@ -167,3 +167,4 @@ C:\dev\Sienna\Backend\test\Sienna.UnitTests\bin\Debug\net6.0\Sienna.Api.pdb
 C:\dev\Sienna\Backend\test\Sienna.UnitTests\bin\Debug\net6.0\Sienna.Application.pdb
 C:\dev\Sienna\Backend\test\Sienna.UnitTests\bin\Debug\net6.0\Sienna.Domain.pdb
 C:\dev\Sienna\Backend\test\Sienna.UnitTests\bin\Debug\net6.0\Sienna.Infrastructure.pdb
+C:\dev\Sienna\Backend\test\Sienna.UnitTests\bin\Debug\net6.0\FluentAssertions.dll

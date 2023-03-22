@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Sienna.Infrastructure.Contexts;
+using Sienna.Infrastructure.Repositories;
 
 #nullable disable
 
 namespace Sienna.Api.Migrations
 {
-    [DbContext(typeof(EspressoShotContext))]
+    [DbContext(typeof(EspressoShotRepository))]
     [Migration("20230321222355_UpdatedTheModelWithMoreDoubles")]
     partial class UpdatedTheModelWithMoreDoubles
     {

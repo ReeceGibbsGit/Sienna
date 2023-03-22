@@ -23,7 +23,7 @@ namespace Sienna.Application.Controllers
         [HttpGet]
         public async Task<IActionResult> GetEspressoShots()
         {
-            var results = await _service.GetEspressoShotList();
+            var results = await _service.GetEspressoShots();
             return Ok(results);
         }
 
@@ -31,15 +31,15 @@ namespace Sienna.Application.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateEspressoShot([FromBody] EspressoShotDto espressoShotDto)
         {
-            var results = await _service.CreateEspressoShot(_mapper.Map<EspressoShot>(espressoShotDto));
-            return Ok(results);
+            var result = await _service.CreateEspressoShot(_mapper.Map<EspressoShot>(espressoShotDto));
+            return Ok(result);
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEspressoShot(Guid id)
         {
-            var results = await _service.DeleteEspressoShot(id);
-            return Ok(results);
+            var result = await _service.DeleteEspressoShot(id);
+            return Ok(result);
         }
     }
 }

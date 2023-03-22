@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vo4wqibha5C4P+D0eWkaqJU9+taDZDP8EtX5V4dtEMpmnYYyE1BiqibrY7glcCyEmkZHtLi5otq0OWd+CKILhg==",
+  "dgSpecHash": "LH3oEh/YVwPw6hC+LMOlUjkG6sgYzotKD3ya+8rgf8k193t1O0bohbOTJwZqKWRMkVnT29bpiJ739WclMKTiSg==",
   "success": true,
   "projectFilePath": "C:\\dev\\Sienna\\Backend\\test\\Sienna.UnitTests\\Sienna.UnitTests.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\reece\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\reece\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\reece\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
+    "C:\\Users\\reece\\.nuget\\packages\\fluentassertions\\6.10.0\\fluentassertions.6.10.0.nupkg.sha512",
     "C:\\Users\\reece\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\reece\\.nuget\\packages\\microsoft.codecoverage\\17.3.2\\microsoft.codecoverage.17.3.2.nupkg.sha512",
     "C:\\Users\\reece\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

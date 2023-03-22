@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Sienna.Infrastructure.Contexts;
+using Sienna.Infrastructure.Repositories;
 
 #nullable disable
 
 namespace Sienna.Api.Migrations
 {
-    [DbContext(typeof(EspressoShotContext))]
+    [DbContext(typeof(EspressoShotRepository))]
     partial class EspressoShotContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

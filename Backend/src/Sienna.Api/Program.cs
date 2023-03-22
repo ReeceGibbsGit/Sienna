@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Sienna.Application.Services;
 using Sienna.Common.Mappings;
-using Sienna.Infrastructure.Contexts;
+using Sienna.Infrastructure.Repositories;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,7 +16,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // Adding our DbContext reference
-builder.Services.AddDbContext<EspressoShotContext>(options => 
+builder.Services.AddDbContext<EspressoShotRepository>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("SiennaConn"),
     builder => builder.MigrationsAssembly("Sienna.Api")));
 
@@ -30,7 +30,7 @@ IMapper mapper = mapperConfig.CreateMapper();
 builder.Services.AddSingleton(mapper);
 
 // Registering our application deps
-builder.Services.AddScoped<IEspressoShotContext, EspressoShotContext>();
+builder.Services.AddScoped<IEspressoShotRepository, EspressoShotRepository>();
 builder.Services.AddScoped<IEspressoShotsService, EspressoShotsService>();
 
 var app = builder.Build();

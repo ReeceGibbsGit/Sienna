@@ -9,7 +9,7 @@ namespace Sienna.Application.Services
 {
     public interface IEspressoShotsService
     {
-        Task<List<EspressoShot>> GetEspressoShotList();
+        Task<List<EspressoShot>> GetEspressoShots();
         Task<EspressoShot> CreateEspressoShot(EspressoShot espressoShot);
         Task<Guid> DeleteEspressoShot(Guid id);
     }

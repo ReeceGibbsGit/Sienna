@@ -13,3 +13,5 @@ C:\dev\Sienna\Backend\src\Sienna.Application\obj\Debug\net6.0\ref\Sienna.Applica
 C:\dev\Sienna\Backend\src\Sienna.Application\bin\Debug\net6.0\Sienna.Infrastructure.dll
 C:\dev\Sienna\Backend\src\Sienna.Application\bin\Debug\net6.0\Sienna.Infrastructure.pdb
 C:\dev\Sienna\Backend\src\Sienna.Application\obj\Debug\net6.0\Sienna.Application.csproj.CopyComplete
+C:\dev\Sienna\Backend\src\Sienna.Application\bin\Debug\net6.0\Sienna.Domain.dll
+C:\dev\Sienna\Backend\src\Sienna.Application\bin\Debug\net6.0\Sienna.Domain.pdb
