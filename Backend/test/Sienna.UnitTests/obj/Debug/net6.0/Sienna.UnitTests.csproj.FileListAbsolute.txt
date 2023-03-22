@@ -168,3 +168,6 @@ C:\dev\Sienna\Backend\test\Sienna.UnitTests\bin\Debug\net6.0\Sienna.Application.
 C:\dev\Sienna\Backend\test\Sienna.UnitTests\bin\Debug\net6.0\Sienna.Domain.pdb
 C:\dev\Sienna\Backend\test\Sienna.UnitTests\bin\Debug\net6.0\Sienna.Infrastructure.pdb
 C:\dev\Sienna\Backend\test\Sienna.UnitTests\bin\Debug\net6.0\FluentAssertions.dll
+C:\dev\Sienna\Backend\test\Sienna.UnitTests\bin\Debug\net6.0\FluentValidation.dll
+C:\dev\Sienna\Backend\test\Sienna.UnitTests\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\dev\Sienna\Backend\test\Sienna.UnitTests\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

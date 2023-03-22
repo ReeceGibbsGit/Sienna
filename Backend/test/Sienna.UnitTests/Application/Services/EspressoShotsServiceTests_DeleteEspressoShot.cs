@@ -19,8 +19,7 @@ namespace Sienna.UnitTests.Application.Services
             // Arrange
             var mockGuid = Guid.NewGuid();
 
-            // Todo: not sure about the green squiggles here. Is there a better way to do this?
-            _mockRepository.Setup(x => x.GetEspressoShotById(It.IsAny<Guid>())).Returns(ValueTask.FromResult(new EspressoShot()));
+            _mockRepository.Setup(x => x.GetEspressoShotById(It.IsAny<Guid>())).Returns(ValueTask.FromResult((EspressoShot?)new EspressoShot()));
             _mockRepository.Setup(x => x.Delete(It.IsAny<EspressoShot>())).Callback(() => { return; });
             _mockRepository.Setup(x => x.SaveChangesAsync()).Returns(Task.FromResult(0));
 
