@@ -7,13 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sienna.Api", "Sienna.Api\Si
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E4F65489-1EBF-4905-8FED-B505D1EC8131}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sienna.Infrastructure", "Sienna.Data\Sienna.Infrastructure.csproj", "{B5CF8302-5163-4761-B5F3-369CEA2ECEF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sienna.Infrastructure", "Sienna.Infrastructure\Sienna.Infrastructure.csproj", "{B5CF8302-5163-4761-B5F3-369CEA2ECEF8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{218BA565-65CA-4AF0-8F33-CBFDBE52DFCF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sienna.UnitTests", "..\test\Sienna.UnitTests\Sienna.UnitTests.csproj", "{7D9B7287-EFD4-4CED-8D79-6095808A408F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sienna.Domain", "Sienna.Common\Sienna.Domain.csproj", "{510828AA-E661-43FA-8E38-C85B5C3247AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sienna.Domain", "Sienna.Domain\Sienna.Domain.csproj", "{510828AA-E661-43FA-8E38-C85B5C3247AA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sienna.Application", "Sienna.Application\Sienna.Application.csproj", "{8210247E-54B1-4C17-A56D-7B34B9C06ADC}"
 EndProject
