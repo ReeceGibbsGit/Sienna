@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Sienna.Api.Filters.Auth;
 using Sienna.Application.Services;
-using Sienna.Common.Models;
+using Sienna.Domain.Entities;
 using Sienna.Infrastructure.Models;
 
 namespace Sienna.Application.Controllers

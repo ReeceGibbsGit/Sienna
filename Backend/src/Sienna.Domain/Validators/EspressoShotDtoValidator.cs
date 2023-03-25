@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
-using Sienna.Common.Models;
+using Sienna.Domain;
+using Sienna.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;

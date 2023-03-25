@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sienna.Common.Models
+namespace Sienna.Domain.Entities
 {
     public class EspressoShotDto
     {

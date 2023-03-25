@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sienna.Data\Sienna.Infrastructure.csproj" />
+    <ProjectReference Include="..\Sienna.Infrastructure\Sienna.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using Sienna.Common.Models;
+using Sienna.Domain.Entities;
 using Sienna.Infrastructure.Models;
 using System;
 using System.Collections.Generic;
@@ -44,7 +44,7 @@ namespace Sienna.UnitTests.Api.Controllers
             var results = (ObjectResult)await _espressoShotsController.CreateEspressoShot(new EspressoShotDto());
 
             // Assert
-            results.StatusCode.Should().Be((int)HttpStatusCode.OK);
+            results.StatusCode.Should().Be((int)HttpStatusCode.Created);
             results.Value.Should().BeEquivalentTo(mockEspressoShot);
         }
     }

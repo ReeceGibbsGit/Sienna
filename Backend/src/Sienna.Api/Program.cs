@@ -2,15 +2,13 @@ using AutoMapper;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Sienna.Api.Behaviours;
 using Sienna.Api.Filters.Auth;
 using Sienna.Api.Filters.Operations;
 using Sienna.Application.Services;
-using Sienna.Common.Mappings;
+using Sienna.Domain.Mappings;
 using Sienna.Domain.Validators;
 using Sienna.Infrastructure.Repositories;
-using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
