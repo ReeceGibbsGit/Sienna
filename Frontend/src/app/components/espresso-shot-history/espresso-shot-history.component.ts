@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { EspressoShot } from 'src/app/models/espresso-shot';
-import { EspressoShotService } from 'src/app/services/espresso-shot.service';
+import { EspressoShotService } from 'src/app/services/espresso-shot/espresso-shot.service';
 
 @Component({
   selector: 'app-espresso-shot-history',

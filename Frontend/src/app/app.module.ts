@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { EspressoShotComponent } from './components/espresso-shot/espresso-shot.component'
 import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { CamelSpace } from './pipes/camel-space.pipe';
 import { HttpClientModule } from '@angular/common/http';
 
