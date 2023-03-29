@@ -1,6 +1,10 @@
-@import '../../styles.scss';
+@import '../../../styles.scss';
 
 .title-bar {
     height: 80px;
     background-color: $sienna-accent;
+}
+
+.logo {
+    height: 70px;
 }

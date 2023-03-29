@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 .espresso-card {
     margin-top: 5px;
 }
@@ -8,14 +10,9 @@
 
 .sub-sub-title {
     font-weight: bold;
+    color: $sienna-subtone;
 }
 
-ul {
-    margin: 0px 0px;
-    padding: 0px 0px;
- li {
-    list-style-type: none;
-    margin: 0px 0px;
-    padding: 0px 0px;
- }   
+.shot-title {
+    color: $sienna-primary !important;
 }

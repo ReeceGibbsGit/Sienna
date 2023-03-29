@@ -1,10 +1,10 @@
 <mat-card class="espresso-card">
     <mat-card-header class="espresso-card-header">
-        <mat-card-title>Rating: {{ espressoShot.rating }}/5</mat-card-title>
+        <mat-card-title class="shot-title">Rating: {{ espressoShot.rating }}/5</mat-card-title>
         <mat-card-subtitle>
             <ul>
                 <li class="sub-sub-title">{{ getFlavourText() | camelSpace }}</li>
-                <li>Beans (type) - {{ espressoShot.beanType }} | Beans (grams) - {{ espressoShot.grind }}</li>
+                <li>Beans (type) - {{ espressoShot.beanType }} | Beans (grams) - {{ espressoShot.beans }}</li>
                 <li>Water (grams) - {{ espressoShot.water }} | Grind - {{ espressoShot.grind }}</li>
                 <li>Pressure - {{ espressoShot.pressure }} | Brew time - {{ espressoShot.brewTime }}</li>
             </ul>

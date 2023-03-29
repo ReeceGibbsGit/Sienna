@@ -21,7 +21,6 @@ namespace Sienna.Application.Controllers
         }
 
         // GET api/espressoshots
-        [ApiKey]
         [HttpGet]
         public async Task<IActionResult> GetEspressoShots()
         {
@@ -30,7 +29,6 @@ namespace Sienna.Application.Controllers
         }
 
         // POST api/espressoshots
-        [ApiKey]
         [HttpPost]
         public async Task<IActionResult> CreateEspressoShot([FromBody] EspressoShotDto espressoShotDto)
         {
@@ -39,7 +37,6 @@ namespace Sienna.Application.Controllers
         }
 
         // DELETE api/espressoshots
-        [ApiKey]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteEspressoShot(Guid id)
         {

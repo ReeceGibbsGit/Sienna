@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   header = 'Sienna';
   logoPath = '../../assets/logo/sienna-text.png';
+  iconPath = '../../assets/icons/icon-128x128.png'
 }

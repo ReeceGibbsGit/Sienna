@@ -1,3 +1,11 @@
+export enum Flavour {
+    VeryAcidic = 1,
+    SlightlyAcidic = 2,
+    BalancedFlavour = 3,
+    SlightlyBitter = 4,
+    VeryBitter = 5
+}
+
 export interface EspressoShot {
     id: string;
     beanType?: string;

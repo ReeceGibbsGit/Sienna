@@ -12,6 +12,18 @@ using Sienna.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Enabling cors for development
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllHeaders",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
+
 // Add services to the container.
 builder.Services.AddControllers(options =>
 {
@@ -26,7 +38,7 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 // Adding our DbContext reference
-builder.Services.AddDbContext<EspressoShotRepository>(options => 
+builder.Services.AddDbContext<EspressoShotRepository>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("SiennaConn"),
     builder => builder.MigrationsAssembly("Sienna.Api")));
 
@@ -59,6 +71,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowAllHeaders");
 
 app.UseAuthorization();
 
