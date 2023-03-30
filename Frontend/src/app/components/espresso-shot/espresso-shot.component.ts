@@ -7,7 +7,6 @@ import { EspressoShot, Flavour } from '../../models/espresso-shot';
   styleUrls: ['./espresso-shot.component.scss']
 })
 export class EspressoShotComponent {
-
   @Input() espressoShot: EspressoShot = {
     id: '',
     beanType: '',

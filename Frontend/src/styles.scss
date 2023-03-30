@@ -34,3 +34,12 @@ ul {
     padding: 0px 0px;
  }   
 }
+
+.sienna-button {
+    background-color: $sienna-primary;
+    color: $sienna-background !important;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}

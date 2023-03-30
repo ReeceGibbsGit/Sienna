@@ -11,6 +11,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { CamelSpace } from './pipes/camel-space.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { MatButtonModule } from '@angular/material/button'; 
+import { MatDialogModule } from '@angular/material/dialog';
+import { EspressoShotFormComponent } from './components/espresso-shot-form/espresso-shot-form/espresso-shot-form.component'; 
+import { MatFormFieldModule } from '@angular/material/form-field'; 
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatSliderModule } from '@angular/material/slider'; 
 
 
 @NgModule({
@@ -19,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     EspressoShotHistoryComponent,
     EspressoShotComponent,
-    CamelSpace
+    CamelSpace,
+    EspressoShotFormComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +34,11 @@ import { HttpClientModule } from '@angular/common/http';
     MatToolbarModule,
     MatCardModule,
     HttpClientModule,
+    MatButtonModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatSliderModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
