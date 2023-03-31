@@ -2,36 +2,42 @@
     <mat-dialog-content class="form-content" [formGroup]="form">
         <mat-form-field>
             <label class="form-label" for="beanType">Beans (type)</label>
-            <input matInput placeholder="Beans (type)" formControlName="beanType" type="text">
+            <input matInput placeholder="Beans" formControlName="beanType" type="text">
         </mat-form-field>
         <mat-form-field>
             <label class="form-label" for="beans">Beans (grams)</label>
             <input matInput placeholder="Beans (grams)" formControlName="beans" type="number">
         </mat-form-field>
         <mat-form-field>
-            <label class="form-label" for="grind">Grind</label>
-            <input matInput placeholder="Grind" formControlName="grind">
+            <label class="form-label" for="grind">Grind (coarseness)</label>
+            <input matInput placeholder="Grind" formControlName="grind" type="number">
         </mat-form-field>
         <mat-form-field>
             <label class="form-label" for="water">Water (grams)</label>
-            <input matInput placeholder="Water (grams)" formControlName="water">
+            <input matInput placeholder="Water" formControlName="water" type="number">
         </mat-form-field>
         <mat-form-field>
             <label class="form-label" for="pressure">Pressure (bars)</label>
-            <input matInput placeholder="Pressure (bars)" formControlName="pressure">
+            <input matInput placeholder="Pressure" formControlName="pressure" type="number">
         </mat-form-field>
         <mat-form-field>
             <label class="form-label" for="brewTime">Brew Time (seconds)</label>
-            <input matInput placeholder="Brew Time (seconds)" formControlName="brewTime">
+            <input matInput placeholder="Brew Time" formControlName="brewTime" type="number">
         </mat-form-field>
-        <mat-form-field>
+        <div class="slider">
             <label class="form-label" for="flavour">Flavour</label>
-            <input class="slider" matInput formControlName="flavour" type="range" min="1" max="5">
-        </mat-form-field>
-        <mat-form-field>
+            <br>
+            <mat-slider min="1" max="5" step="1" showTickMarks discrete [displayWith]="formatFlavourLabel">
+                <input matSliderThumb formControlName="flavour">
+            </mat-slider>
+        </div>
+        <div class="slider">
             <label class="form-label" for="rating">Rating</label>
-            <input class="slider" matInput formControlName="rating" type="range" min="1" max="5">
-        </mat-form-field>
+            <br>
+            <mat-slider min="1" max="5" step="0.1" showTickMarks discrete [displayWith]="formatNumberLabel">
+                <input matSliderThumb formControlName="rating">
+            </mat-slider>
+        </div>
         <mat-form-field>
             <label class="form-label" for="comments">Comments</label>
             <input matInput placeholder="Comments" formControlName="comments" type="text">

@@ -17,6 +17,7 @@ import { EspressoShotFormComponent } from './components/espresso-shot-form/espre
 import { MatFormFieldModule } from '@angular/material/form-field'; 
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatSliderModule } from '@angular/material/slider'; 
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { MatSliderModule } from '@angular/material/slider';
     MatFormFieldModule,
     ReactiveFormsModule,
     MatSliderModule,
+    MatInputModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable

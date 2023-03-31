@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { EspressoShotFormComponent } from '../espresso-shot-form/espresso-shot-form/espresso-shot-form.component';
 
@@ -12,11 +12,13 @@ export class HeaderComponent {
   logoPath = '../../assets/logo/sienna-text.png';
   iconPath = '../../assets/icons/icon-128x128.png'
 
-  constructor(private dialog: MatDialog) {}
+  @Output() closeEvent = new EventEmitter();
+
+  constructor(private dialog: MatDialog) { }
 
   openEspressoShotDialog() {
     const dialogConfig = new MatDialogConfig();
-    
+
     /**
      * All of our dialog config for our espresso shot form will go here
      */
@@ -28,6 +30,10 @@ export class HeaderComponent {
     dialogConfig.maxHeight = 'fit-content'
     dialogConfig.height = 'fit-content';
 
-    this.dialog.open(EspressoShotFormComponent, dialogConfig);
+    const dialogRef = this.dialog.open(EspressoShotFormComponent, dialogConfig);
+
+    dialogRef.afterClosed().subscribe(formData => 
+      this.closeEvent.emit(formData)
+    );
   }
 }

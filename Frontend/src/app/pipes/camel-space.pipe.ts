@@ -3,7 +3,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 /**
  * This is a custom pipe that takes in a camel case string and adds a space before every uppercose letter
  */
-@Pipe({name: 'camelSpace'})
+@Pipe({ name: 'camelSpace' })
 
 export class CamelSpace implements PipeTransform {
     *transformChar(value: string) {
