@@ -14,7 +14,7 @@ namespace Sienna.Infrastructure.Repositories
 
         public DbSet<EspressoShot> EspressoShots { get; set; }
 
-        public Task<List<EspressoShot>> GetEspressoShotsAsync() => EspressoShots.ToListAsync();
+        public Task<List<EspressoShot>> GetEspressoShotsAsync() => EspressoShots.OrderBy(e => e.TimeStamp).ToListAsync();
 
         public ValueTask<EspressoShot?> GetEspressoShotById(Guid id) => EspressoShots.FindAsync(id);
 

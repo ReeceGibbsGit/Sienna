@@ -20,6 +20,8 @@ namespace Sienna.Application.Services
 
         public async Task<EspressoShot> CreateEspressoShot(EspressoShot espressoShot)
         {
+            espressoShot.TimeStamp = DateTime.Now;
+
             _repository.Add(espressoShot);
             await _repository.SaveChangesAsync();
 

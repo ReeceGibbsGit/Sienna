@@ -31,5 +31,7 @@ namespace Sienna.Infrastructure.Models
 
         [StringLength(256)]
         public string? Comments { get; set; }
+
+        public DateTime? TimeStamp { get; set; }
     }
 }
