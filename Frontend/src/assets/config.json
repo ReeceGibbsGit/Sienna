@@ -1,4 +1,4 @@
 {
-    "apiBaseUrl": "",
-    "apiKey": ""
+    "apiBaseUrl": "http://192.168.1.38:7500",
+    "apiKey": "1234"
 }
